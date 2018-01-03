@@ -1,7 +1,7 @@
 <template>
 
     <div id='main'>
-        <mt-header fixed title="固定在顶部"></mt-header>
+        <mt-header fixed title="VUE2商城"></mt-header>
 
         <h1>这是App.vue根组件</h1>
 

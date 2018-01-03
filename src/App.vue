@@ -5,7 +5,9 @@
         <mt-header fixed title="VUE2商城实例"></mt-header>
 
         <!--路由留下的坑-->
-        <router-view></router-view>
+        <transition>
+            <router-view></router-view>
+        </transition>
 
 
     <!--mui里的tabbar组件-->
@@ -52,6 +54,19 @@ export default {
 <style scoped>
 #main {
   padding: 40px 0;
+  overflow-x:hidden;
+}
+.v-enter{
+    opacity: 0;
+    transform:translateX(100%)
+}
+.v-leave-to{
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
+}
+.v-enter-active,.v-leave-active{
+    transition:all 0.5s ease;
 }
 </style>
 
